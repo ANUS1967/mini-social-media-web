@@ -1,0 +1,144 @@
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif; }
+
+/* Body */
+body {
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Card style */
+.card {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Inputs */
+input, textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 8px rgba(59,130,246,0.3);
+}
+
+textarea { resize: none; height: 80px; }
+
+/* Buttons */
+.btn {
+  width: auto;               /* Auto width for signup/login button */
+  min-width: 150px;
+  padding: 12px 25px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(to right, #3b82f6, #0ea5e9);
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(59,130,246,0.3);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(59,130,246,0.5);
+}
+
+/* Toggle login/signup */
+.toggle {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.toggle span {
+  color: #3b82f6;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Logout */
+.logoutBtn {
+  background: #ef4444;
+}
+
+.logoutBtn:hover { background: #dc2626; }
+
+/* Post Card */
+.postCard {
+  background: #f0f4f8;
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.postCard p {
+  font-size: 14px;
+  color: #333;
+}
+
+.postCard .actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.actionBtn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.actionBtn:hover { text-decoration: underline; }
+
+/* Search */
+.searchInput {
+  margin-top: 15px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
